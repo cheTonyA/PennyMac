@@ -42,4 +42,7 @@ jobs:
           pip install pytest boto3
 
       - name: Run tests
+        env:
+          AWS_DEFAULT_REGION: us-east-1
+          AWS_REGION: us-east-1
         run: pytest
