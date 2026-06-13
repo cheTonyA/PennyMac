@@ -22,8 +22,14 @@ def lambda_handler(event, context):
     return {
         "statusCode": 200,
         "headers": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Methods": "GET,OPTIONS",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
+            "Cache-Control": "public, max-age=300",
+            "X-Project": "Pennymac-Stock-Pipeline",
+            "X-Data-Source": "DynamoDB",
+            "X-Result-Count": str(len(items))
         },
         "body": json.dumps(items)
     }
