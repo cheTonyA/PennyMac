@@ -17,8 +17,8 @@ resource "aws_lambda_function" "stock_processor" {
   environment {
     variables = {
       MASSIVE_SECRET_ARN = aws_secretsmanager_secret.massive_api_key.arn
-      DYNAMODB_TABLE  = aws_dynamodb_table.stock_results.name
-      WATCHLIST       = join(",", var.watchlist)
+      DYNAMODB_TABLE     = aws_dynamodb_table.stock_results.name
+      WATCHLIST          = join(",", var.watchlist)
     }
   }
 }
