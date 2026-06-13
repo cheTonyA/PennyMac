@@ -341,24 +341,3 @@ Add Lambda duration and throttle alarms
 Add authentication for private dashboard access
 Add more detailed retry/backoff logic for stock API failures
 ```
-
-## Interview Summary
-
-This project demonstrates:
-
-```text
-Backend API development
-Serverless architecture
-Infrastructure as Code
-Secrets management
-CI/CD
-Cloud monitoring
-Frontend data visualization
-Operational alerting
-```
-
-A concise explanation:
-
-```text
-I built a serverless stock mover pipeline using AWS Lambda, EventBridge, DynamoDB, API Gateway, Amplify, Secrets Manager, CloudWatch, SNS, and Terraform. EventBridge triggers a Lambda daily, the Lambda retrieves stock data from Massive, calculates the largest absolute percentage mover, stores the result in DynamoDB, and an API Lambda exposes the last seven results to a frontend dashboard. I also added CI/CD with GitHub Actions, secrets management, and CloudWatch/SNS alerting so the system is deployable, secure, and observable.
-```
