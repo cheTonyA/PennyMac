@@ -24,3 +24,9 @@ variable "watchlist" {
   type        = list(string)
   default     = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "NVDA"]
 }
+
+variable "github_access_token" {
+  description = "GitHub token for Amplify to access the repository"
+  type        = string
+  sensitive   = true
+}

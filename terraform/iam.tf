@@ -32,6 +32,13 @@ resource "aws_iam_policy" "lambda_policy" {
       {
         Effect = "Allow"
         Action = [
+          "secretsmanager:GetSecretValue"
+        ]
+        Resource = aws_secretsmanager_secret.massive_api_key.arn
+      },
+      {
+        Effect = "Allow"
+        Action = [
           "logs:CreateLogGroup",
           "logs:CreateLogStream",
           "logs:PutLogEvents"
