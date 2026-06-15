@@ -2,6 +2,8 @@
 
 ![CI](https://github.com/cheTonyA/PennyMac/actions/workflows/ci.yml/badge.svg)
 
+https://main.ddlbipit98snq.amplifyapp.com/
+
 A serverless AWS application that tracks a watchlist of major tech stocks, identifies the single largest daily mover by absolute percentage change, stores the result, exposes it through an API, and displays the historical winners on a frontend dashboard.
 
 ## Project Goal
